@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", system-ui;
+    font-size: 14px;
+    line-height: 24px;
+}
+.container{
+    width: 1170px;
+    margin: 100px auto;
+}
+
+img{
+    max-width: 100%;
+    vertical-align: middle;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+/*=========================
+Footer Area CSS
+===========================*/
+.footer-area{
+    background-color: #02295a;
+    padding: 20px 0;
+    margin-top: 80px;
+}
+.footer-content {
+    display: grid;
+    grid-template-columns: 20% 20% 30% 30%;
+    column-gap: 30px;
+    color: #fff;
+  }
+  .single-footer h4 {
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+  }
+  .single-footer img{
+    width: 75%;
+    text-align: center;
+  }
+.single-footer ul li a {
+    color: #fff;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 10px;
+  }
+  .single-footer ul li i {
+    margin-right: 10px;
+  }
+  .single-footer h5 {
+	font-size: 16px;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+.single-footer .social-menu a {
+	font-size: 24px;
+	color: #fff;
+	margin-right: 20px;
+	margin-top: 30px;
+	display: inline-block;
+}
+.single-footer .social-menu a:hover{
+    color: #ff7720;
+}
+.single-footer input {
+	width: 100%;
+	padding: 10px 10px;
+	border: 1px solid #ddd;
+	margin: 10px 0;
+}
+.single-footer input[type="submit"] {
+	width: 100%;
+	background: #ff7720;
+	border: 0;
+	cursor: pointer;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 600;
+}
+.footer-bottom{
+    background-color: #001b3d;
+    padding: 20px 0;
+    text-align: center;
+	color: #fff;
+}

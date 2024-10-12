@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", system-ui;
+    font-size: 14px;
+    line-height: 24px;
+}
+.container{
+    width: 1170px;
+    margin: 100px auto;
+}
+
+img{
+    max-width: 100%;
+    vertical-align: middle;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+.bg{
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+}
+.bg::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    opacity: .75;
+    z-index: -1;
+}
+
+/*============================
+Section Title
+=============================*/
+
+.section-title {
+    text-align: center;
+    padding: 60px 0;
+  }
+  .section-title h4 {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+  .section-title h2 {
+    font-size: 32px;
+    text-transform: capitalize;
+    font-weight: 600;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  .section-title h2:before {
+    position: absolute;
+    content: "";
+    left: 50%;
+    bottom: 0;
+    width: 50px;
+    height: 2px;
+    background-color: #ff7720;
+    transform: translateX(-50%);
+  }
+  .section-title p {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  /*===========================
+  CTA Area CSS
+  ===========================*/
+ 
+.cta-area {
+    color: #fff;
+    padding: 40px 0;
+    margin: 60px 0;
+  }
+  .cta-content {
+    text-align: center;
+  }
+  .cta-form{
+    position: relative;
+    width: 700px;
+    margin: 0 auto;
+  }
+  .cta-form input[type='text'] {
+    width: 700px;
+    padding: 12px 15px;
+    border-radius: 50px;
+    border: 1px solid #ddd;
+    /*! position: relative; */
+  }
+  .cta-form a {
+	position: absolute;
+	top: 0;
+	right: 0;
+	/* margin-left: 153px; */
+	background: #ff7720;
+	padding: 8px 20px;
+	border-radius: 50px;
+	border: 1px solid #ff7720;
+	color: #fff;
+	text-transform: capitalize;
+	font-size: 16px;
+}

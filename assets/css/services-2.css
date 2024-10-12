@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", system-ui;
+    font-size: 14px;
+    line-height: 24px;
+}
+.container{
+    width: 1170px;
+    margin: 100px auto;
+}
+
+img{
+    max-width: 100%;
+    vertical-align: middle;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+/*=====================
+Section Title CSS
+=======================*/
+
+.section-title {
+    text-align: center;
+    padding: 40px 0;
+  }
+  .section-title h4 {
+    text-transform: lowercase;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .section-title h2 {
+    font-size: 40px;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin: 10px 0;
+    padding-bottom: 20px;
+    position: relative;
+  }
+  .section-title h2::before {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 2px;
+    background: tomato;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .section-title h2::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background: tomato;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+
+/*=======================
+Services Area CSS
+========================*/
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    column-gap: 30px;
+  }
+  .single-service {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+  
+  }
+  .single-service:hover.single-service::before{
+    width: 100%;
+  }
+  .single-service:hover.single-service::after{
+    width: 100%;
+  }
+  .single-service img {
+    margin: 20px 0;
+  }
+  .single-service p {
+    margin: 10px 0;
+  }
+  .single-service h4 {
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+  .single-service::before{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 4px;
+    background-color: #ff7720;
+    transition: .3s;
+  }
+  .single-service::after{
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 4px;
+    background-color: #ff7720;
+    transition: .3s;
+  }
+

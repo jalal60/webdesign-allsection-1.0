@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", system-ui;
+    font-size: 14px;
+    line-height: 24px;
+}
+.container{
+    width: 1170px;
+    margin: 100px auto;
+}
+
+img{
+    max-width: 100%;
+    vertical-align: middle;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+/*========================
+Button CSS
+==========================*/
+.btn{
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    text-transform: capitalize;
+    border-radius: 7px;
+    transition: .3s;
+    position: relative;
+}
+.btn.btn-primary i{
+    position: absolute;
+    left: 2px;
+    top:15px;
+    opacity: 0;
+    opacity: 0;
+    transition: .3s;
+}
+.btn.btn-primary{
+    padding: 12px 28px;
+    background-color: tomato;
+}
+.btn.btn-primary:hover{
+    background-color: #333;
+}
+.btn.btn-primary:hover i{
+   opacity: 1;
+   left: 8px;
+}
+
+/*=========================
+Section Title CSS
+==========================*/
+
+.title-section {
+    text-align: center;
+    padding: 60px 0;
+  }
+  .title-section h4 {
+    font-size: 36px;
+    text-transform: capitalize;
+    font-weight: 600;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  .title-section h4:before {
+    position: absolute;
+    content: "";
+    width: 80px;
+    height: 2px;
+    background-color: tomato;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .title-section h4::after {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: tomato;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /*=====================
+  Price Area CSS
+  ========================*/
+  .price-area{
+    background: #f2f2f2;
+  }
+.price {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    column-gap: 30px;
+  }
+  .single-price {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 80px;
+    background-color: #fff;
+  }
+  .single-price h4 {
+    font-size: 26px;
+    text-transform: uppercase;
+    padding: 20px 0;
+  }
+  .single-price h2 {
+    font-size: 46px;
+    margin: 20px 0;
+    background-color: #f2f2f2;
+    padding: 20px 0;
+  }
+  .single-price h2 span {
+    font-size: 18px;
+  }
+  .single-price h2.active{
+    background-color: tomato;
+    color: #fff;
+  }
+  .single-price ul li {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+  .single-price ul li:last-child {
+    border: 0;
+    padding-bottom: 0;
+  }
+  .single-price i {
+	font-size: 16px;
+	margin-right: 5px;
+}
+.single-price a{
+    margin: 10px 0;
+}

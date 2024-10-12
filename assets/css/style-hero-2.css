@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+}
+img{
+    max-width: 100%;
+    vertical-align: middle;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+.container{
+    width:1170px;
+    margin: 0 auto;
+
+}
+
+.bg{
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+}
+.bg::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    opacity: .75;
+    z-index: -1;
+}
+
+.btn{
+    display: inline-block;
+    text-align: center;
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: .3s;
+}
+.btn.btn-box{
+    padding: 12px 20px;
+    background-color: tomato;
+}
+.btn.btn-box:hover{
+    background-color: #333;
+}
+
+
+
+
+.header {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    column-gap: 30px;
+  }
+  .menu ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .menu ul li a {
+    display: block;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 30px;
+    transition: .3s;
+  }
+  .menu ul li a:hover {
+    color: tomato;
+  }
+  .header-area {
+    padding: 20px 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 999;
+  }
+
+
+  
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+    text-align: center;
+  }
+  .banner-content h4 {
+    font-size: 24px;
+    text-transform: capitalize;
+  }
+  .banner-content h2 {
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 40px 0;
+  }
+  .banner-content a{
+    margin-right: 20px;
+  }
+
+
+
+  .banner-area .slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+  }
+  
+  .banner-area .slick-arrow.slick-next{
+    right: 50px;
+  }
+  .banner-area .slick-arrow.slick-prev{
+    left: 50px;
+  }
+
+  .banner-area .slick-slider button{
+    border: 0;
+    background: transparent;
+  }
+
+  .banner-area .slick-slider i{
+    color: #fff;
+    font-size: 25px;
+  }
